@@ -1,16 +1,27 @@
-# Node rules:
-## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
 
-## Dependency directory
-## Commenting this out is preferred by some people, see
-## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
-node_modules
+using System.Dynamic;
+using System.Runtime.CompilerServices;
 
-# Book build output
-_book
+public class TodoItem
+   {
+public int Id {get;set;}
+public string Title {get;set;}=string.Empty;
+public bool IsCompleted {get;set;}
+public DateTime CreatedAt {get;set;}
+public DateTime? DueDate {get;set;}
+   }
 
-# eBook build output
-*.epub
-*.mobi
-*.pdf
+ private  static readonly List<TodoItem> _items=new();
+
+
+
+
+
+
+
+
+
+
+
+
+
